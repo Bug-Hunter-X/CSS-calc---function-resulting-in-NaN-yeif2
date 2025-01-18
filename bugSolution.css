@@ -1,0 +1,13 @@
+/* Correcting the NaN error in calc() */
+
+/* Incorrect usage resulting in NaN */
+/*.element { width: calc(100% - 50px); }*/
+
+/* Correct usage, converting px to percentage or vice versa for compatibility */
+.element { width: calc(100% - 25%); }
+
+/* Or, ensuring pixel values are used consistently */
+/*.element { width: calc(300px - 50px); }*/
+
+/* Example with other units */
+.another-element { height: calc(100vh - 10rem); /* vh and rem units are compatible */ }
